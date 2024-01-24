@@ -4,8 +4,11 @@ const Cart = (props) =>{
    const {showCart, setShowCart}= props
     return (
         
-        <div className={`lg:col-span-2 fixed lg:right-0 lg:w-96  bg-[#1f1d28]  top-0 w-full h-full transition-all z-50 ${showCart? "right-0" : "-right-full"}`}>
+          <div className={`lg:col-span-2 fixed lg:right-0 lg:w-96  bg-[#1f1d28]  top-0 w-full h-full transition-all z-50 ${showCart? "right-0" : "-right-full"}`}> 
         {/* { carrito} */}
+        <div>
+          <p> proximamente</p>
+        </div>
           <div className="relative pt-16 lg:pt-8 text-gray-300 p-4 h-full">
             <RiCloseLine onClick={()=>setShowCart(false)} className="lg:hidden abosute left-4 top-4 p-3 box-content text-gray-300 bg-[#262837] rounded-full text-xl"/>
             <h1 className="text-2xl mt-4">Carrito</h1>
@@ -151,8 +154,8 @@ const Cart = (props) =>{
 
           </div>
 
-          
-        </div>
+          </div>
+       
     )
 }
 export default Cart

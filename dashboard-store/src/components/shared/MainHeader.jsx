@@ -1,7 +1,9 @@
 import React from "react";
 import {RiSearch2Line} from "react-icons/ri";
-const Header = () => {
-      {/* header */}
+const MainHeader = () => {
+
+
+   return  ( 
       <header className="p-4">
       {/*title and search */}
       <div className="flex flex-col gap-4 mb-6 md:flex-row md:justify-between md:items-center">
@@ -28,6 +30,7 @@ const Header = () => {
       <a href="#" className="py-2 pr-4">algo mas</a>
     </nav>
   
-  </header>
+  </header>)
+
 }
-export default Header
+export default MainHeader
